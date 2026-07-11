@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love 🤍</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- MUSIC -->
+
+<audio id="music" loop>
+
+    <source src="music.mp3" type="audio/mpeg">
+
+</audio>
+
+
+
+<!-- LOADING -->
+
+<section id="loading" class="scene active">
+
+    <div class="loading-box">
+
+        <h1>🐰</h1>
+
+        <h2>Preparing Your Surprise...</h2>
+
+        <p>
+            Ada hadiah kecil yang dibuat khusus untukmu 🤍
+        </p>
+
+
+        <div class="loading-bar">
+
+            <div class="loading-fill"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- SCENE PUZZLE -->
+
+<section id="gameScene" class="scene">
+
+
+    <div class="card">
+
+
+        <h1>
+            🎁 Sebelum Membuka Hadiah
+        </h1>
+
+
+        <p>
+            Mainkan puzzle kecil ini dulu ya 🤍
+        </p>
+
+<div id="gameBoard">
+
+    <div class="puzzle-card" data-card="apple">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="flower">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="rabbit">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="gift">
+        ❓
+    </div>
+
+
+    <div class="puzzle-card" data-card="gift">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="rabbit">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="flower">
+        ❓
+    </div>
+
+    <div class="puzzle-card" data-card="apple">
+        ❓
+    </div>
+
+</div>
+        
+        <p id="gameText">
+
+            Cari pasangan yang sama ✨
+
+        </p>
+
+
+        <button id="openGiftBtn">
+
+            Buka Hadiah 🎀
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- SCENE 2 - TIUP LILIN -->
+<!-- ========================= -->
+
+<section id="cakeScene" class="scene">
+
+
+    <div class="card">
+
+
+        <h1>
+            🎂 Make A Wish
+        </h1>
+
+
+        <p>
+            Pejamkan mata sebentar...
+            buat satu doa terbaikmu 🤍
+        </p>
+
+
+
+        <div class="cake-container">
+
+
+            <div class="cake">
+
+
+                <div class="candle">
+
+
+                    <div id="flame" class="flame">
+                        🔥
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="cake-body">
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <p id="wishText">
+
+            Klik tombol di bawah untuk meniup lilinnya ✨
+
+        </p>
+
+
+
+        <button id="blowBtn">
+
+            Tiup Lilin 💨
+
+        </button>
+
+
+
+        <button id="nextFlowerBtn" style="display:none;">
+
+            Lihat Bunganya 🌹
+
+        </button>
+
+
+
+    </div>
+
+
+</section>
+<!-- ========================= -->
+<!-- SCENE 3 - BOUQUET -->
+<!-- ========================= -->
+
+<section id="flowerScene" class="scene">
+
+
+    <div class="card">
+
+
+        <h1>
+            🌹 A Flower For You
+        </h1>
+
+
+        <div class="flower-animation">
+
+
+            <span class="flower">
+                🌹
+            </span>
+
+
+            <span class="flower">
+                🌷
+            </span>
+
+
+            <span class="flower">
+                🌹
+            </span>
+
+
+            <span class="flower">
+                🌸
+            </span>
+
+
+        </div>
+
+
+
+        <div class="bouquet">
+
+            💐
+
+        </div>
+
+
+
+        <p class="flower-text">
+
+            Aku tahu kamu suka fresh flowers...
+            jadi kali ini aku ingin memberikan bunga
+            yang tidak akan layu.
+
+            Bukan karena bunganya tidak bisa mati,
+            tapi karena kenangan yang ada di baliknya
+            akan selalu tinggal di hati. 🤍🌹
+
+        </p>
+
+
+
+        <button id="nextPhotoBtn">
+
+            Lanjut Lihat Foto 📸
+
+        </button>
+
+
+    </div>
+
+
+</section>
+  <!-- ========================= -->
+<!-- SCENE 4 - PHOTO 1 -->
+<!-- ========================= -->
+
+<section id="photoScene1" class="scene">
+
+    <div class="card">
+
+        <div class="photo-frame">
+
+            <img src="foto1.jpg" class="photo">
+
+        </div>
+
+
+        <h1>
+            🤍 Tentang Kamu
+        </h1>
+
+
+        <p class="story">
+
+            Ada satu hal kecil tentang kamu
+            yang selalu membuatku jatuh hati...
+
+            Caramu tersenyum,
+            caramu bercerita,
+            dan caramu tetap berusaha
+            walaupun terkadang dunia terasa berat.
+
+        </p>
+
+
+        <button id="nextPhoto2">
+
+            Lanjut ✨
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- SCENE 5 - PHOTO 2 -->
+<!-- ========================= -->
+
+<section id="photoScene2" class="scene">
+
+    <div class="card">
+
+
+        <div class="photo-frame">
+
+            <img src="foto2.jpg" class="photo">
+
+        </div>
+
+
+        <h1>
+            🌷 Hari-Harimu
+        </h1>
+
+
+        <p class="story">
+
+            Aku mungkin tidak selalu bisa berada
+            di sampingmu setiap waktu.
+
+            Tapi percayalah,
+            ada seseorang yang selalu berharap
+            kamu baik-baik saja setiap harinya.
+
+        </p>
+
+
+        <button id="nextPhoto3">
+
+            Lanjut ✨
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- SCENE 6 - PHOTO 3 -->
+<!-- ========================= -->
+
+<section id="photoScene3" class="scene">
+
+
+    <div class="card">
+
+
+        <div class="photo-frame">
+
+
+            <img src="foto3.jpg" class="photo">
+
+
+        </div>
+
+
+
+        <h1>
+
+            🌹 Untuk Perempuan Hebat
+
+        </h1>
+
+
+
+        <p class="story">
+
+            Terima kasih sudah bertahan
+            sampai hari ini.
+
+            Jangan lupa bahwa kamu adalah seseorang
+            yang sangat berharga.
+
+            Jangan pernah merasa kurang,
+            karena di mata seseorang,
+            kamu sudah lebih dari cukup.
+
+        </p>
+
+
+
+        <button id="nextLetter">
+
+            Buka Surat 💌
+
+        </button>
+
+
+    </div>
+
+
+</section>
+  <!-- ========================= -->
+<!-- SCENE 7 - LETTER -->
+<!-- ========================= -->
+
+<section id="letterScene" class="scene">
+
+
+    <div class="card letter-card">
+
+
+        <h1>
+            💌 Sebuah Surat Untukmu
+        </h1>
+
+
+        <p class="story">
+
+            Happy Birthday, sayangku 🤍🎂
+
+            <br><br>
+
+            Hari ini adalah hari dimana seseorang yang
+            begitu berarti di hidupku dilahirkan ke dunia.
+
+            Seseorang yang mungkin tidak selalu menyadari
+            betapa berharganya dirinya,
+            seseorang yang terkadang terlalu kuat menghadapi
+            banyak hal sendirian.
+
+            <br><br>
+
+            Di hari spesialmu ini,
+            aku tidak hanya ingin mengucapkan selamat ulang tahun.
+
+            Aku ingin berterima kasih.
+
+            <br><br>
+
+            Terima kasih sudah hadir,
+            terima kasih sudah menjadi alasan kecil
+            yang membuat hari-hariku terasa lebih berwarna.
+
+            Terima kasih untuk senyumanmu,
+            cerita-ceritamu,
+            tingkah lucumu,
+            bahkan hal-hal kecil yang mungkin menurutmu biasa saja,
+            tapi sebenarnya selalu berhasil membuatku bahagia.
+
+            <br><br>
+
+            Semoga di usia yang baru ini,
+            langkahmu selalu dipermudah,
+            hatimu selalu dijaga,
+            dan semua doa yang kamu simpan diam-diam
+            perlahan menemukan jalannya untuk menjadi nyata.
+
+            <br><br>
+
+            Jika suatu hari kamu merasa lelah,
+            ingatlah bahwa kamu tidak harus selalu terlihat kuat.
+
+            Kamu boleh istirahat,
+            kamu boleh menangis,
+            kamu boleh merasa tidak baik-baik saja.
+
+            Karena kamu tetap seseorang yang pantas dicintai.
+
+            <br><br>
+
+            Aku berharap kamu selalu menemukan alasan
+            untuk tersenyum setiap hari.
+
+            Semoga dunia memperlakukanmu dengan lembut,
+            seperti lembutnya caramu membuat orang lain merasa nyaman.
+
+            <br><br>
+
+            Dan jika nanti waktu terus berjalan,
+            aku berharap masih bisa menjadi seseorang
+            yang melihat senyummu,
+            mendengar ceritamu,
+            dan merayakan banyak hari spesial bersamamu.
+
+            <br><br>
+
+            Selamat ulang tahun, perempuan hebatku.
+
+            🌹🤍
+
+            <br><br>
+
+            Semoga semua hal baik datang kepadamu.
+
+            Karena seseorang sepertimu,
+            pantas mendapatkan banyak kebahagiaan.
+
+        </p>
+
+
+        <button id="nextEnding">
+
+            Lihat Penutup ❤️
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+
+<!-- ========================= -->
+<!-- SCENE 8 - ENDING -->
+<!-- ========================= -->
+
+<section id="endingScene" class="scene">
+
+
+    <div class="card ending-card">
+
+
+        <div class="confetti-area"></div>
+
+
+        <div class="photo-frame ending-photo">
+
+
+            <img src="foto4.jpg" class="photo">
+
+
+        </div>
+
+
+
+        <h1>
+
+            🎂 Happy Birthday, My Love 🤍
+
+        </h1>
+
+
+
+        <p class="story">
+
+
+            Terima kasih sudah menjadi bagian
+            dari cerita kecil ini.
+
+            <br><br>
+
+            Mungkin hadiah ini sederhana,
+            hanya berupa gambar,
+            tulisan,
+            dan beberapa animasi kecil.
+
+            <br><br>
+
+            Tapi semua ini dibuat dengan satu harapan...
+
+            Semoga kamu tersenyum hari ini. ❤️
+
+            <br><br>
+
+            Tetap jadi kamu yang aku kenal.
+
+            Tetap jadi seseorang yang hangat,
+            lucu,
+            dan punya hati yang indah.
+
+            <br><br>
+
+            Sekali lagi...
+
+            <br>
+
+            <b>
+            Selamat ulang tahun, sayangku.
+            🎂🌹
+            </b>
+
+        </p>
+
+
+
+        <h2>
+
+            ❤️ I Love You ❤️
+
+        </h2>
+
+<p class="signature">
+
+    Dari seseorang yang mungkin tidak selalu sempurna,
+    <br>
+    namun selalu ingin melihatmu tersenyum.
+
+    <br><br>
+
+    Dengan penuh cinta,
+    <br>
+    <b>Dim</b> 🤍
+
+</p>
+    </div>
+
+
+</section>
+  
+<script src="script.js"></script>
+
+
+</body>
+
+      </html>
