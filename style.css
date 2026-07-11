@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+
+    background:
+    linear-gradient(
+        rgba(230,245,255,0.75),
+        rgba(255,230,240,0.75)
+    ),
+    url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23");
+
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+
+/* salju jatuh */
+
+body::before {
+
+    content: "❄️ ❄️ ❄️";
+
+    position: fixed;
+
+    top: -50px;
+
+    left: 20%;
+
+    font-size: 30px;
+
+    animation: snow 8s linear infinite;
+
+}
+
+
+body::after {
+
+    content: "🌸 ❄️";
+
+    position: fixed;
+
+    top: -50px;
+
+    right: 20%;
+
+    font-size: 35px;
+
+    animation: snow 10s linear infinite;
+
+}
+
+
+
+@keyframes snow {
+
+
+    0% {
+
+        transform: translateY(0) rotate(0deg);
+
+        opacity: 1;
+
+    }
+
+
+    100% {
+
+        transform: translateY(110vh) rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 450px;
+
+}
+
+
+
+
+
+.slide {
+
+    display: none;
+
+}
+
+
+
+.slide.active {
+
+    display: block;
+
+    animation: masuk 1s ease;
+
+}
+
+
+
+
+@keyframes masuk {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(40px) scale(.95);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+
+
+
+
+
+/* Kartu Snow Rabbit */
+
+.card {
+
+
+    background:
+
+    linear-gradient(
+
+    145deg,
+
+    rgba(255,255,255,.96),
+
+    rgba(240,248,255,.96)
+
+    );
+
+
+    padding: 35px 25px;
+
+
+    border-radius: 35px;
+
+
+    text-align: center;
+
+
+    position: relative;
+
+
+    overflow: hidden;
+
+
+    border: 3px solid white;
+
+
+    box-shadow:
+
+    0 20px 50px rgba(100,150,220,.25);
+
+
+
+}
+
+
+
+/* kelinci pojok */
+
+.card::before {
+
+
+    content: "🐰";
+
+
+    position: absolute;
+
+
+    top: -30px;
+
+
+    left: 15px;
+
+
+    font-size: 55px;
+
+
+    transform: rotate(-15deg);
+
+
+}
+
+
+
+/* salju pojok */
+
+
+.card::after {
+
+
+    content: "❄️ ✨ ❄️";
+
+
+    position: absolute;
+
+
+    bottom: 12px;
+
+
+    right: 15px;
+
+
+    font-size: 18px;
+
+
+}
+
+
+
+
+
+h1 {
+
+
+    color: #6c8cff;
+
+
+    font-size: 30px;
+
+
+    margin-bottom: 20px;
+
+
+    animation: teks 1.5s;
+
+}
+
+
+
+h2 {
+
+
+    color: #6c8cff;
+
+
+    font-size: 24px;
+
+
+    margin-bottom: 15px;
+
+
+}
+
+
+
+p {
+
+
+    color: #555;
+
+
+    font-size: 15px;
+
+
+    line-height: 1.8;
+
+
+    animation: teks 2s;
+
+
+}
+
+
+
+
+@keyframes teks {
+
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+
+/* Foto */
+
+
+.photo {
+
+
+    width: 190px;
+
+
+    height: 190px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 50%;
+
+
+    border: 6px solid white;
+
+
+    margin-bottom: 20px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.15);
+
+
+}
+
+
+
+
+
+
+/* tombol */
+
+
+button {
+
+
+    margin-top: 30px;
+
+
+    padding: 13px 35px;
+
+
+    border: none;
+
+
+    border-radius: 50px;
+
+
+    background: #6c8cff;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    cursor:pointer;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover {
+
+
+    transform:scale(1.08);
+
+
+    background:#5674e8;
+
+
+}
+
+
+
+
+
+
+/* HP */
+
+
+@media(max-width:600px){
+
+
+    .card {
+
+        padding:30px 20px;
+
+    }
+
+
+    .photo {
+
+        width:160px;
+
+        height:160px;
+
+    }
+
+
+    h1 {
+
+        font-size:26px;
+
+    }
+
+
+    h2 {
+
+        font-size:21px;
+
+    }
+
+
+  }
